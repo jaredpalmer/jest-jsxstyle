@@ -1,0 +1,49 @@
+{
+  "name": "jest-jsxstyle",
+  "version": "0.0.0-semantically-released",
+  "description": "Jest utilities for JSXstyle React",
+  "main": "./index.js",
+  "scripts": {
+    "clean": "rm -rf dist",
+    "build": "npm run clean && babel --copy-files --out-dir dist --ignore *.test.js src",
+    "test": "jest --env=jsdom"
+  },
+  "files": ["dist", "index.js"],
+  "keywords": [],
+  "author": "Jared Palmer <jared@palmer.net> (http://jaredpalmer.com/)",
+  "license": "MIT",
+  "dependencies": {
+    "jest-diff": "^19.0.0",
+    "jest-snapshot": "^19.0.2",
+    "jsxstyle": "2.0.0-beta.3"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.23.0",
+    "babel-jest": "^19.0.0",
+    "babel-preset-env": "^1.2.0",
+    "babel-preset-react": "^6.23.0",
+    "babel-preset-stage-2": "^6.22.0",
+    "babel-register": "^6.23.0",
+    "enzyme": "^2.7.1",
+    "enzyme-to-json": "^1.5.0",
+    "husky": "^0.13.2",
+    "jest-cli": "^19.0.2",
+    "lint-staged": "^3.3.1",
+    "react": "^15.4.2",
+    "react-addons-test-utils": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "react-test-renderer": "^15.4.2"
+  },
+  "peerDependencies": {},
+  "lint-staged": {
+    "*.js": ["prettier-eslint --write", "git add"]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jaredpalmer/jest-jsxstyle.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jaredpalmer/jest-jsxstyle/issues"
+  },
+  "homepage": "https://github.com/jaredpalmer/jest-jsxstyle#readme"
+}

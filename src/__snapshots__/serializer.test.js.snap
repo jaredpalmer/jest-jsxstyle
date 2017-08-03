@@ -1,0 +1,107 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Snapshot Serializer does not interfere with non jsxstyle components 1`] = `
+
+
+<div>
+  Hello World, this is my first jsxstyle component!
+</div>
+`;
+
+exports[`Snapshot Serializer handles children 1`] = `
+._1jmy8or {color:orange;display:block;}
+._15clmrq {display:block;margin:4rem;}
+
+
+<div
+  className="_1jmy8or"
+  style={undefined}
+>
+  <div
+    className="_15clmrq"
+    style={undefined}
+  >
+    Hello World, this is my first jsxstyle component!
+  </div>
+</div>
+`;
+
+exports[`Snapshot Serializer react-test-renderer 1`] = `
+._1d79ojo {background:white;color:red;display:block;margin:1rem;}
+
+
+<div
+  className="_1d79ojo"
+  style={undefined}
+>
+  Hello World, this is my first jsxstyle component!
+</div>
+`;
+
+exports[`Snapshot Serializer works when root element is not a jsxstyle element 1`] = `
+._18ai6h8 {color:black;display:block;}
+
+
+<div>
+  <div
+    className="_18ai6h8"
+    style={undefined}
+  >
+    Hello World, this is my first jsxstyle component!
+  </div>
+</div>
+`;
+
+exports[`enzyme.mount 1`] = `
+
+
+<Block
+  color="green"
+  display="block"
+>
+  <div
+    className="_1cvnte8"
+  >
+    <Block
+      display="block"
+      margin="4rem"
+    >
+      <div
+        className="_15clmrq"
+      >
+        Hello World, this is my first jsxstyle component!
+      </div>
+    </Block>
+  </div>
+</Block>
+`;
+
+exports[`enzyme.render 1`] = `
+
+
+<div
+  class="_1cvnte8"
+>
+  <div
+    class="_15clmrq"
+  >
+    Hello World, this is my first jsxstyle component!
+  </div>
+</div>
+`;
+
+exports[`enzyme.shallow 1`] = `
+._1cvnte8 {color:green;display:block;}
+
+
+<div
+  className="_1cvnte8"
+>
+  <Block
+    display="block"
+    margin="4rem"
+  >
+    Hello World, this is my first jsxstyle component!
+  </Block>
+</div>
+`;

@@ -3,7 +3,7 @@ import * as enzyme from 'enzyme';
 import { Block } from 'jsxstyle';
 import React from 'react';
 import renderer from 'react-test-renderer';
-import serializer from './serializer';
+import serializer from './.';
 import toJson from 'enzyme-to-json';
 
 expect.addSnapshotSerializer(serializer);

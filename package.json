@@ -6,10 +6,11 @@
   "scripts": {
     "clean": "rm -rf dist",
     "build": "npm run clean && babel --copy-files --out-dir dist --ignore *.test.js src",
-    "test": "jest --env=jsdom"
+    "test": "jest --env=jsdom",
+    "format": "prettier --trailing-comma es5 --single-quote --write src/**/*.js"
   },
   "files": ["dist", "index.js"],
-  "keywords": [],
+  "keywords": ["jest", "jsxstyle", "react", "snapshots"],
   "author": "Jared Palmer <jared@palmer.net> (http://jaredpalmer.com/)",
   "license": "MIT",
   "dependencies": {
@@ -29,14 +30,14 @@
     "husky": "^0.13.2",
     "jest-cli": "^19.0.2",
     "lint-staged": "^3.3.1",
+    "prettier": "^1.5.3",
     "react": "^15.4.2",
     "react-addons-test-utils": "^15.4.2",
     "react-dom": "^15.4.2",
     "react-test-renderer": "^15.4.2"
   },
-  "peerDependencies": {},
   "lint-staged": {
-    "*.js": ["prettier-eslint --write", "git add"]
+    "*.js": ["prettier --trailing-comma es5 --single-quote --write", "git add"]
   },
   "repository": {
     "type": "git",

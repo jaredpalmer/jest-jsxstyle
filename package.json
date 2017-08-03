@@ -1,6 +1,6 @@
 {
   "name": "jest-jsxstyle",
-  "version": "0.0.0-semantically-released",
+  "version": "0.0.0",
   "description": "Jest utilities for JSXstyle React",
   "main": "./index.js",
   "scripts": {

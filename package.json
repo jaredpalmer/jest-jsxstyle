@@ -1,6 +1,6 @@
 {
   "name": "jest-jsxstyle",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Jest utilities for JSXstyle React",
   "main": "./index.js",
   "scripts": {
@@ -9,8 +9,16 @@
     "test": "jest --env=jsdom",
     "format": "prettier --trailing-comma es5 --single-quote --write src/**/*.js"
   },
-  "files": ["dist", "index.js"],
-  "keywords": ["jest", "jsxstyle", "react", "snapshots"],
+  "files": [
+    "dist",
+    "index.js"
+  ],
+  "keywords": [
+    "jest",
+    "jsxstyle",
+    "react",
+    "snapshots"
+  ],
   "author": "Jared Palmer <jared@palmer.net> (http://jaredpalmer.com/)",
   "license": "MIT",
   "dependencies": {
@@ -37,7 +45,10 @@
     "react-test-renderer": "^15.4.2"
   },
   "lint-staged": {
-    "*.js": ["prettier --trailing-comma es5 --single-quote --write", "git add"]
+    "*.js": [
+      "prettier --trailing-comma es5 --single-quote --write",
+      "git add"
+    ]
   },
   "repository": {
     "type": "git",

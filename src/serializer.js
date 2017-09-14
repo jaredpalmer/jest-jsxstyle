@@ -1,4 +1,4 @@
-const { injectAddRule, resetCache } = require('jsxstyle/lib/styleCache');
+const { injectAddRule, resetCache } = require('jsxstyle');
 
 let styles = '';
 injectAddRule(rule => (styles += rule + '\n'));
@@ -16,7 +16,7 @@ function createSerializer(injector) {
     const prettyPrinted = `${styles}\n\n${printer(val)}`;
 
     styles = '';
-    // resetCache() per test??
+    resetCache();
     return prettyPrinted;
   }
 

@@ -24,7 +24,7 @@
   "dependencies": {
     "jest-diff": "^19.0.0",
     "jest-snapshot": "^19.0.2",
-    "jsxstyle": "2.0.0-beta.6"
+    "jsxstyle": "2.0.0"
   },
   "devDependencies": {
     "babel-cli": "^6.23.0",

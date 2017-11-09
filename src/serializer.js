@@ -1,7 +1,13 @@
-const { injectAddRule, resetCache } = require('jsxstyle');
+const { cache } = require('jsxstyle');
 
 let styles = '';
-injectAddRule(rule => (styles += rule + '\n'));
+
+cache.injectOptions({
+  onInsertRule: rule => {
+    styles += rule + '\n';
+  },
+  pretty: true
+})
 
 function createSerializer(injector) {
   function test(val) {
@@ -16,7 +22,7 @@ function createSerializer(injector) {
     const prettyPrinted = `${styles}\n\n${printer(val)}`;
 
     styles = '';
-    resetCache();
+    cache.reset();
     return prettyPrinted;
   }
 

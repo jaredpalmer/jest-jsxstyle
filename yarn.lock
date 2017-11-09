@@ -1396,18 +1396,6 @@ fbjs@^0.8.1, fbjs@^0.8.4:
     setimmediate "^1.0.5"
     ua-parser-js "^0.7.9"
 
-fbjs@^0.8.9:
-  version "0.8.14"
-  resolved "https://registry.yarnpkg.com/fbjs/-/fbjs-0.8.14.tgz#d1dbe2be254c35a91e09f31f9cd50a40b2a0ed1c"
-  dependencies:
-    core-js "^1.0.0"
-    isomorphic-fetch "^2.1.1"
-    loose-envify "^1.0.0"
-    object-assign "^4.1.0"
-    promise "^7.1.1"
-    setimmediate "^1.0.5"
-    ua-parser-js "^0.7.9"
-
 figures@^1.7.0:
   version "1.7.0"
   resolved "https://registry.yarnpkg.com/figures/-/figures-1.7.0.tgz#cbe1e3affcf1cd44b80cadfed28dc793a9701d2e"
@@ -2211,12 +2199,18 @@ jsprim@^1.2.2:
     json-schema "0.2.3"
     verror "1.3.6"
 
-jsxstyle@2.0.0-beta.6:
-  version "2.0.0-beta.6"
-  resolved "https://registry.yarnpkg.com/jsxstyle/-/jsxstyle-2.0.0-beta.6.tgz#bfb38e4d9018ecdddfd76c1899cbf7b783e34e7a"
+jsxstyle-utils@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.npmjs.org/jsxstyle-utils/-/jsxstyle-utils-2.0.0.tgz#211a4d113bd2ed3ce2a27072f97bcc9179333f69"
   dependencies:
     invariant "^2.2.1"
-    prop-types "^15.5.8"
+
+jsxstyle@2.0.0:
+  version "2.0.0"
+  resolved "https://registry.npmjs.org/jsxstyle/-/jsxstyle-2.0.0.tgz#5d032edbd10a9b585a477b365cd19d3edec1d0fc"
+  dependencies:
+    invariant "^2.2.1"
+    jsxstyle-utils "^2.0.0"
 
 kind-of@^3.0.2:
   version "3.1.0"
@@ -2405,7 +2399,7 @@ longest@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/longest/-/longest-1.0.1.tgz#30a0b2da38f73770e8294a0d22e6625ed77d0097"
 
-loose-envify@^1.0.0, loose-envify@^1.1.0, loose-envify@^1.3.1:
+loose-envify@^1.0.0, loose-envify@^1.1.0:
   version "1.3.1"
   resolved "https://registry.yarnpkg.com/loose-envify/-/loose-envify-1.3.1.tgz#d1a8ad33fa9ce0e713d65fdd0ac8b748d478c848"
   dependencies:
@@ -2820,13 +2814,6 @@ promise@^7.1.1:
   resolved "https://registry.yarnpkg.com/promise/-/promise-7.1.1.tgz#489654c692616b8aa55b0724fa809bb7db49c5bf"
   dependencies:
     asap "~2.0.3"
-
-prop-types@^15.5.8:
-  version "15.5.10"
-  resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.5.10.tgz#2797dfc3126182e3a95e3dfbb2e893ddd7456154"
-  dependencies:
-    fbjs "^0.8.9"
-    loose-envify "^1.3.1"
 
 prr@~0.0.0:
   version "0.0.0"

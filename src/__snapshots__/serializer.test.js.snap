@@ -53,6 +53,8 @@ exports[`Snapshot Serializer works when root element is not a jsxstyle element 1
 `;
 
 exports[`enzyme.mount 1`] = `
+._1cvnte8 {color:green;display:block;}
+._15clmrq {display:block;margin:4rem;}
 
 
 <Block
@@ -77,6 +79,8 @@ exports[`enzyme.mount 1`] = `
 `;
 
 exports[`enzyme.render 1`] = `
+._1cvnte8 {color:green;display:block;}
+._15clmrq {display:block;margin:4rem;}
 
 
 <div

@@ -7,18 +7,11 @@
     "clean": "rm -rf dist",
     "build": "npm run clean && babel --copy-files --out-dir dist --ignore *.test.js src",
     "test": "jest --env=jsdom",
-    "format": "prettier --trailing-comma es5 --single-quote --write src/**/*.js"
+    "format": "prettier --trailing-comma es5 --single-quote --write src/**/*.js",
+    "prepublish": "npm run build"
   },
-  "files": [
-    "dist",
-    "index.js"
-  ],
-  "keywords": [
-    "jest",
-    "jsxstyle",
-    "react",
-    "snapshots"
-  ],
+  "files": ["dist", "index.js"],
+  "keywords": ["jest", "jsxstyle", "react", "snapshots"],
   "author": "Jared Palmer <jared@palmer.net> (http://jaredpalmer.com/)",
   "license": "MIT",
   "dependencies": {
@@ -45,10 +38,7 @@
     "react-test-renderer": "^15.4.2"
   },
   "lint-staged": {
-    "*.js": [
-      "prettier --trailing-comma es5 --single-quote --write",
-      "git add"
-    ]
+    "*.js": ["prettier --trailing-comma es5 --single-quote --write", "git add"]
   },
   "repository": {
     "type": "git",

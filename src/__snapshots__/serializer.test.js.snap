@@ -9,8 +9,14 @@ exports[`Snapshot Serializer does not interfere with non jsxstyle components 1`]
 `;
 
 exports[`Snapshot Serializer handles children 1`] = `
-._1jmy8or {color:orange;display:block;}
-._15clmrq {display:block;margin:4rem;}
+._1jmy8or {
+  color: orange;
+  display: block;
+}
+._15clmrq {
+  display: block;
+  margin: 4rem;
+}
 
 
 <div
@@ -27,7 +33,12 @@ exports[`Snapshot Serializer handles children 1`] = `
 `;
 
 exports[`Snapshot Serializer react-test-renderer 1`] = `
-._1d79ojo {background:white;color:red;display:block;margin:1rem;}
+._1d79ojo {
+  background: white;
+  color: red;
+  display: block;
+  margin: 1rem;
+}
 
 
 <div
@@ -39,7 +50,10 @@ exports[`Snapshot Serializer react-test-renderer 1`] = `
 `;
 
 exports[`Snapshot Serializer works when root element is not a jsxstyle element 1`] = `
-._18ai6h8 {color:black;display:block;}
+._18ai6h8 {
+  color: black;
+  display: block;
+}
 
 
 <div>
@@ -53,8 +67,14 @@ exports[`Snapshot Serializer works when root element is not a jsxstyle element 1
 `;
 
 exports[`enzyme.mount 1`] = `
-._1cvnte8 {color:green;display:block;}
-._15clmrq {display:block;margin:4rem;}
+._1cvnte8 {
+  color: green;
+  display: block;
+}
+._15clmrq {
+  display: block;
+  margin: 4rem;
+}
 
 
 <Block
@@ -79,8 +99,14 @@ exports[`enzyme.mount 1`] = `
 `;
 
 exports[`enzyme.render 1`] = `
-._1cvnte8 {color:green;display:block;}
-._15clmrq {display:block;margin:4rem;}
+._1cvnte8 {
+  color: green;
+  display: block;
+}
+._15clmrq {
+  display: block;
+  margin: 4rem;
+}
 
 
 <div
@@ -95,7 +121,10 @@ exports[`enzyme.render 1`] = `
 `;
 
 exports[`enzyme.shallow 1`] = `
-._1cvnte8 {color:green;display:block;}
+._1cvnte8 {
+  color: green;
+  display: block;
+}
 
 
 <div

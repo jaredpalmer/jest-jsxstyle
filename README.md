@@ -25,10 +25,13 @@ through the code to know _what_ caused the class name to change.
 This allows your snapshots to look more like:
 
 ```html
-.jsxstyle-0 {color:red;display:block;}
+._15clmrq {
+  color:red;
+  display:block;
+}
 
 <h1
-  class="jsxstyle-0"
+  class="_15clmrq"
 >
   Hello World
 </h1>

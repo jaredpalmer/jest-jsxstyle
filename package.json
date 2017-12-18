@@ -23,9 +23,9 @@
   "author": "Jared Palmer <jared@palmer.net> (http://jaredpalmer.com/)",
   "license": "MIT",
   "dependencies": {
-    "jest-diff": "^19.0.0",
-    "jest-snapshot": "^19.0.2",
-    "jsxstyle": "2.0.0"
+    "jest-diff": "22.0.0",
+    "jest-snapshot": "22.0.0",
+    "jsxstyle": "2.0.7"
   },
   "devDependencies": {
     "babel-cli": "^6.23.0",
@@ -37,7 +37,7 @@
     "enzyme": "^2.7.1",
     "enzyme-to-json": "^1.5.0",
     "husky": "^0.13.2",
-    "jest-cli": "^19.0.2",
+    "jest-cli": "22.0.0",
     "lint-staged": "^3.3.1",
     "prettier": "^1.5.3",
     "react": "^15.4.2",

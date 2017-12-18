@@ -6,8 +6,8 @@ cache.injectOptions({
   onInsertRule: rule => {
     styles += rule + '\n';
   },
-  pretty: true
-})
+  pretty: true,
+});
 
 function createSerializer(injector) {
   function test(val) {
@@ -16,12 +16,14 @@ function createSerializer(injector) {
     );
   }
 
-  function print(val, printer) {
+  function print(val, serialize) {
     val.withStyles = true;
 
-    const prettyPrinted = `${styles}\n\n${printer(val)}`;
-
+    const stylesToPrint = styles === '' ? styles : `${styles}\n\n`;
     styles = '';
+
+    const prettyPrinted = `${stylesToPrint}${serialize(val)}`;
+
     cache.reset();
     return prettyPrinted;
   }

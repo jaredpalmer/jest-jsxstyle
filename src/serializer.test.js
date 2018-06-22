@@ -1,11 +1,11 @@
 import * as enzyme from 'enzyme';
-
+import Adapter from 'enzyme-adapter-react-16';
 import { Block } from 'jsxstyle';
 import React from 'react';
 import renderer from 'react-test-renderer';
 import serializer from './serializer';
 import toJson from 'enzyme-to-json';
-
+enzyme.configure({ adapter: new Adapter() });
 expect.addSnapshotSerializer(serializer);
 
 describe('Snapshot Serializer', () => {

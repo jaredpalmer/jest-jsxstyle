@@ -92,11 +92,9 @@ exports[`Snapshot Serializer handles children 1`] = `
 
 <div
   className="_1jmy8or"
-  style={undefined}
 >
   <div
     className="_15clmrq"
-    style={undefined}
   >
     Hello World, this is my first jsxstyle component!
   </div>
@@ -114,7 +112,6 @@ exports[`Snapshot Serializer react-test-renderer 1`] = `
 
 <div
   className="_1d79ojo"
-  style={undefined}
 >
   Hello World, this is my first jsxstyle component!
 </div>
@@ -130,7 +127,6 @@ exports[`Snapshot Serializer works when root element is not a jsxstyle element 1
 <div>
   <div
     className="_18ai6h8"
-    style={undefined}
   >
     Hello World, this is my first jsxstyle component!
   </div>
